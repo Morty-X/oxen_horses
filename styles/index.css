@@ -152,13 +152,20 @@ article{
   overflow: hidden;
   font-size: 16px;
   color: #757f91;
+  transition: all .3s;
+}
+.article_Frequently_extend img{
+  transition: all .3s;
 }
 #plus{
   display: none;
 }
-#plus:checked+.article_Frequently_extend_text{
+#plus:checked~.article_Frequently_extend_text{
   height: 62px;
   padding: 0 24px 20px 24px;
+}
+#plus:checked+label img{
+  transform: rotate(45deg);
 }
 footer{
   display: flex;
