@@ -6,11 +6,11 @@
 a {
     text-decoration: none;
 }
+
 /* 头部 */
 .top {
     width: 1157px;
     height: 144px;
-   /* background-color: palegoldenrod; */
     margin: 0 auto;
     display: flex;
     justify-content:space-between;
@@ -33,12 +33,23 @@ a {
     margin: 40px auto;
    display: flex;
     justify-content: space-around;
-    /* position: relative; */
 }
 
-@media screen and (max-width:992px){
-	.top-banner{
+@media screen and (max-width:1012px){
+	.top-banner,
+	.top-r input,
+	.top-r .ss {
 		display: none;
+	}
+}
+
+@media screen and (max-width:1012px) {
+	.top {
+		width: 700px;
+	}
+	.user {
+		position: relative;
+		right: -160px;
 	}
 }
 
@@ -61,7 +72,6 @@ a {
     border: 1px solid #ccc;
     border-radius: 24px;
 	background-color: #fff;
-	/* box-sizing: border-box; */
 }
 
 
@@ -80,11 +90,17 @@ a {
 	top: 6px;
 }
 
+.top a {
+	color: #000;
+}
+
 .top .top-r {
-	/* width: 200px; */
+	width: 100px;
 	height: 48px;
 	margin: 38px auto;
 	position: relative;
+	display: flex;
+	justify-content: space-between;
 }
 
 .top-r img{
@@ -113,23 +129,23 @@ a {
 	color: #fff;
 }
 
-/* .top-r .ss1:hover{
-	display: block;
-	
-} */
+.top-r .user:hover{
+	background-color:black;
+}
 
-.top-r .user-ku {
-	position: absolute;
-	right:-60px;
-	top: 10px;
+.top-r .user:hover img {
+	filter: invert(100%);
 }
 
 .top-r .user {
-	width: 50px;height: 50px;
+	width: 50px;
+	height: 50px;
 	border: 1px solid #ccc;
 	border-radius: 50px;
 	box-sizing: border-box;
 	background-color: #64784b1a;
+	color: #000;
+	margin: 8px 0 0 20px;
 }
 
 .top-r .user img { 
@@ -138,14 +154,7 @@ a {
 	left: 14px;
 }
 
-.top-r .user:hover{
-	background-color: #333;
-}
-
-.top-r .user img{
-	color: white;
-}
-
+/* 搜索区 */
 .banner {
     width: 1157px;
     height: 550px;
@@ -155,12 +164,12 @@ a {
 	overflow: hidden;
 }
 
-@media screen and (max-width:992px){
+@media screen and (max-width:1013px){
 	.banner {
 		width: 700px;
 	}
-	.banner .search-ku  {
-		width: 200px;
+	.banner .search-ku{
+		width: 695px;
 	}
 }
 
@@ -177,7 +186,7 @@ a {
 }
 
 .banner .search-ku {
-    width: 1154px;
+    /* width: 1154px; */
     height: 48px;
     border: 1px solid #ccc;
     border-radius: 24px;
@@ -185,35 +194,30 @@ a {
 }
 
 .banner-search input {
-    width: 1090px;
+    width: 500px;
     height: 40px;
-    margin: 4px auto;
-	padding-left: 20px;
+	padding-left: 10px;
 	font-size: 20px;
 	overflow: hidden;
 	border: none;
 	outline: none;
+	position: absolute;
+	top: 55px;
+	left: 35px;
 }
 
 .banner-search img {
 	position: relative;
 	left: 15px;
-	top: 5px;
+	top: 15px;
 	width: 20px;
 }
 
+/* 底部 */
 .box-one {
 	width: 1157px;
 	height: 150px;
 	margin: 0 auto;
-	/* background-color: papayawhip; */
-}
-
-@media screen and (max-width:992px) {
-	.box-one {
-		display: none;
-	}
-	
 }
 
 .box-one img {
@@ -227,7 +231,6 @@ width: 120px;
     justify-content: space-between;
     width: 300px;
     height: 20px;
-    /* background-color: palegreen; */
     margin: 0 auto;
 }
 
@@ -252,55 +255,65 @@ width: 120px;
     color: #8d8b8b;
 }
 
+@media screen and (max-width: 1012px) {
+	.box-one {
+		display: none;
+	}
+}
+
+/* 大屏下的隐藏布局 */
 .bottem {
-	width: 992px;
-	height: 64px;
-	margin: 0 auto;
-	background-color: rgba(255, 255, 255, 0);
-	/* background-color: palegoldenrod; */
-	display: flex;
-	justify-content: space-around;
 	display: none;
 	position: fixed;
 	bottom: 0;
-}
-
-.bottem .tu-one{
-	width: 80px;
+	width: 100%;
 	height: 64px;
-	float: left;
+	background-color: #f0f3f6;
 }
-.bottem .tu-tow {
-	width: 80px;
+
+.bottem-tu {
+	width: 100%;
+	display: flex;
+}
+
+.bottem .tu {
+	flex: 1;
 	height: 64px;
-	float: left;
-	margin: 0 255px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
 }
 
-.bottem .tu-three {
-	width: 80px;
-	height: 64px;
-	float: left;
+.bottem .tu img {
+	width: 22px;
+	height: 22px;
 }
 
-.bottem .tu-one img,
-.bottem .tu-tow img,
-.bottem .tu-three img{
-	height: 30px;
-	position: relative;
-	left: 8px;
-	top: 10px;
+.bottem .tu div{
+	font-size: 16px;
 }
 
-.bottem .tu-one div,
-.bottem .tu-tow div,
-.bottem .tu-three div {
-	position: relative;
-	top: 8px;
+.bottem-tu .tu:Nth-child(1){
+	display: none;
 }
 
-@media screen and (max-width:992px){
-	.bottem {
-		display: block;
+.bottem-tu .tu:Nth-child(2){
+	display: none;
+}
+
+.bottem-tu .tu:Nth-child(3){
+	display: none;
+}
+
+@media screen and (max-width: 1032px) {
+	.bottem,
+	.bottem .tu:Nth-child(1),
+	.bottem .tu:Nth-child(2),
+	.bottem .tu:Nth-child(3) {
+	  /* 设置display: block;会把display: flex;覆盖掉
+		  所以只能用display: flex;覆盖display: none;
+	  */
+	  display: flex;
 	}
-}
+  }
