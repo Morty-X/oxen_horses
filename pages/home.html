@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="../styles/Grid.css">
+    <link rel="stylesheet" href="../styles/home.css">
+    <link rel="stylesheet" href="../styles/base.css">
+</head>
+
+<body>
+    <!-- 图标库 -->
+    <svg style="display: none;">
+        <symbol id="home" viewBox="0 0 16 16">
+            <path fill="none" stroke="currentColor" stroke-linejoin="round" d="M5 10.5h6M2.5 6v7.5h11V6L8 2.5z" />
+        </symbol>
+        <symbol id="movie" viewBox="-2 -2 24 24">
+            <path fill="currentColor"
+                d="M6 15v3h8v-7H6zm-2-2v-2H2V9h2V7H2v6zm0 2H2v1a2 2 0 0 0 2 2zm14-2V7h-2v2h2v2h-2v2zm0 2h-2v3a2 2 0 0 0 2-2zm-4-8V2H6v7h8zm4-2V4a2 2 0 0 0-2-2v3zM4 5V2a2 2 0 0 0-2 2v1zm0-5h12a4 4 0 0 1 4 4v12a4 4 0 0 1-4 4H4a4 4 0 0 1-4-4V4a4 4 0 0 1 4-4" />
+        </symbol>
+        <symbol id="series" viewBox="0 0 24 24">
+            <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M3 10a4 4 0 0 1 4-4h10a4 4 0 0 1 4 4v6a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4zm5-7l2 3m6-3l-2 3m-5 7v-2m6 0v2" />
+        </symbol>
+        <symbol id="user" viewBox="0 0 24 24">
+            <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+                <path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2" />
+                <circle cx="12" cy="7" r="4" />
+            </g>
+        </symbol>
+        <symbol id="search" viewBox="0 0 24 24">
+            <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                d="M19 11.5a7.5 7.5 0 1 1-15 0a7.5 7.5 0 0 1 15 0m-2.107 5.42l3.08 3.08" />
+        </symbol>
+        <symbol id="play" viewBox="0 0 24 24">
+            <path fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                stroke-width="1.5"
+                d="M6.906 4.537A.6.6 0 0 0 6 5.053v13.894a.6.6 0 0 0 .906.516l11.723-6.947a.6.6 0 0 0 0-1.032z" />
+        </symbol>
+        <symbol id="plus" viewBox="0 0 24 24">
+            <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M5 12h14m-7 7V5" />
+        </symbol>
+        <symbol id="next" viewBox="0 0 24 24">
+            <path fill="none" stroke="currentColor" stroke-width="2" d="m7 2l10 10L7 22" />
+        </symbol>
+    </svg>
+
+    <div>
+        <!-- 头部模块 -->
+        <header class="header row">
+            <div class="head-logo">
+                <img src="https://catflix.su/wp-content/themes/distv/resources/assets/img/catflix-dark.svg" alt="">
+            </div>
+            <div class="header-menu md-hide sm-hide ssm-hide">
+                <div class="header-menu__item current-menu__item">
+                    <svg>
+                        <use href="#home" />
+                    </svg>
+                    Home
+                </div>
+                <div class="header-menu__item">
+                    <svg>
+                        <use href="#movie" />
+                    </svg>
+                    Movies
+                </div>
+                <div class="header-menu__item">
+                    <svg>
+                        <use href="#series" />
+                    </svg>Series
+                </div>
+            </div>
+
+            <div class="header-r">
+                <div class="header-r__search md-hide  ssm-hide sm-hide">
+                    <svg>
+                        <use href="#search" />
+                    </svg>
+                    Search
+                </div>
+                <div class="header-r__profile">
+                    <svg>
+                        <use href="#user" />
+                    </svg>
+                </div>
+            </div>
+        </header>
+        <!-- 主要内容模块 -->
+        <div class="main">
+            <div class="main-top">
+                <img src="../images/Home _ catflix.su/xG5TbIDNjM6GKOcK7kFARNnf8KX.jpg" alt="">
+            </div>
+            <div class="main-info">
+                <h1>Nobody Wants This</h1>
+                <div class="text">
+                    <span class="font-Bold tmdb">TMDB
+                    </span>
+                    <div class="text-main font-Bold">7.7</div>
+                    <span>2024</span>
+                    <span>•</span>
+                    <span>2 Seasons</span>
+                </div>
+
+                <div class="btns font-Bold row">
+                    <div class="watch flexCenter ">
+                        <svg>
+                            <use href="#play" />
+                        </svg>
+                        <span>Watch now</span>
+                        <div class="shade"></div>
+                    </div>
+                    <div class="trailer flexCenter">
+                        <span>Trailer</span>
+                    </div>
+                    <div class="plus flexCenter">
+                        <svg>
+                            <use href="#plus" />
+                        </svg>
+                    </div>
+
+                </div>
+
+                <p class="tips xl-20">An agnostic sex podcaster and a newly single rabbi fall in love, but can their
+                    relationship survive their wildly
+                    different […]</p>
+            </div>
+
+            <!-- 影集 -->
+            <div class="films ">
+
+                <div class="netWorks ">
+                    <div class="desc">
+                        <h2 class="descTitle">Networks</h2>
+                        <svg class="next">
+                            <use href="#next" />
+                        </svg>
+                    </div>
+                    <ul class="netWork-menu row ">
+                        <li class="netWork-menu__item flexCenter ssm-24 sm-12 md-12 lg-8 lx-6">
+                            <h2>RAI 1</h2>
+                        </li>
+                        <li class="netWork-menu__item flexCenter ssm-hide sm-12 md-12 lg-8 lx-6">
+                            <h2>Yle Areena</h2>
+                        </li>
+                        <li class="netWork-menu__item flexCenter ssm-hide sm-12 sm-hide md-hide md-12 lg-8 lx-6">
+                            <h2>Crunchyroll</h2>
+                        </li>
+                        <li
+                            class="netWork-menu__item flexCenter ssm-hide sm-12 sm-hide md-hide md-12 lg-hide lg-8 lx-6">
+                            <h2>TBS</h2>
+                        </li>
+
+                        <div class="nextR flexCenter">
+                            <svg>
+                                <use href="#next" />
+                            </svg>
+                        </div>
+                    </ul>
+
+                </div>
+
+
+                <div class="episodes">
+                    <div class="desc">
+                        <h2 class="descTitle">Latest episodes</h2>
+                        <svg class="next">
+                            <use href="#next" />
+                        </svg>
+                    </div>
+
+                    <ul class="episodes-menu row">
+                        <li class="episodes-menu__item episodes-menu__item1 ssm-24 sm-12 md-12 lg-8 lx-6  ">
+                            <div class="toggle"></div>
+                            <div class="last__title">
+                                Nobody Wants This <span>S1:E8</span>
+                            </div>
+                        </li>
+                        <li class="episodes-menu__item episodes-menu__item2 ssm-hide sm-12 md-12 lg-8 lx-6">
+                            <div class="toggle"></div>
+                            <div class="last__title">
+                                Nobody Wants This <span>S1:E10</span>
+                            </div>
+                        </li>
+                        <li
+                            class="episodes-menu__item episodes-menu__item3 ssm-hide sm-12 hide sm-hide md-hide md-12 lg-8 lx-6">
+                            <div class="toggle"></div>
+                            <div class="last__title">
+                                Nobody Wants This <span>S1:E9</span>
+                            </div>
+                        </li>
+                        <li
+                            class="episodes-menu__item episodes-menu__item4 ssm-hide sm-12  sm-hide md-hide md-12 lg-hide lg-8 lx-6">
+                            <div class="toggle"></div>
+                            <div class="last__title">
+                                Nobody Wants This <span>S1:E7</span>
+                            </div>
+                        </li>
+                        <div class="nextR flexCenter">
+                            <svg>
+                                <use href="#next" />
+                            </svg>
+                        </div>
+                    </ul>
+
+                </div>
+                <div class="PopularSeries">
+                    <div class="desc">
+                        <h2 class="descTitle">Popular Series</h2>
+                        <svg class="next">
+                            <use href="#next" />
+                        </svg>
+                    </div>
+
+                    <ul class="popSeries row ">
+                        <li class="xl-6 lg-8  md-12  sm-12  popSeries-menu flexCenter">
+                            <img src="https://image.tmdb.org/t/p/w342/yZevl2vHQgmosfwUdVNzviIfaWS.jpg" alt="">
+                        </li>
+                        <li class="xl-6 lg-8  md-12  sm-12  ssm-hide  popSeries-menu flexCenter">
+                            <img src="https://image.tmdb.org/t/p/w342/3jLF76FYBh5YHb4n1mQz1ayjDD4.jpg" alt="">
+                        </li>
+                        <li class="xl-6 lg-8  md-hide sm-hide sm-12  ssm-hide  popSeries-menu flexCenter">
+                            <img src="https://image.tmdb.org/t/p/w342/1XS1oqL89opfnbLl8WnZY1O1uJx.jpg" alt="">
+                        </li>
+                        <li class="xl-6 lg-8 lg-hide md-hide sm-hide  sm-hide  ssm-hide  popSeries-menu flexCenter">
+                            <img src="https://image.tmdb.org/t/p/w342/f2PVrphK0u81ES256lw3oAZuF3x.jpg" alt="">
+                        </li>
+                        <div class="nextR flexCenter">
+                            <svg>
+                                <use href="#next" />
+                            </svg>
+                        </div>
+                    </ul>
+                </div>
+
+                <div class="PopularMovies">
+                    <div class="desc">
+                        <h2 class="descTitle">Popular Movies</h2>
+                        <svg class="next">
+                            <use href="#next" />
+                        </svg>
+                    </div>
+                    <ul class="popMovies row ">
+                        <li class="xl-6 lg-8 md-12  sm-12 popMovies-menu flexCenter">
+                            <img src="https://image.tmdb.org/t/p/w342/ds0tapugknJAD6ClBI3cD6Z4CiI.jpg" alt="">
+                        </li>
+                        <li class="xl-6 lg-8 md-12 sm-12 ssm-hide popMovies-menu flexCenter">
+                            <img src="https://image.tmdb.org/t/p/w342/3ER4u7T951pMv60hL5bUN6WsAMV.jpg" alt="">
+                        </li>
+                        <li class="xl-6 lg-8 md-hide sm-hide sm-12  ssm-hide popMovies-menu flexCenter">
+                            <img src="https://image.tmdb.org/t/p/w342/k8j4YLZlda98dqp9ErymKzjYowG.jpg" alt="">
+                        </li>
+                        <li class="xl-6 lg-8 lg-hide  md-hide sm-hide  sm-hide  ssm-hide popMovies-menu flexCenter">
+                            <img src="https://image.tmdb.org/t/p/w342/8gLIksu5ggdfBL1UbeTeonHquxl.jpg" alt="">
+                        </li>
+                        <div class="nextR flexCenter">
+                            <svg>
+                                <use href="#next" />
+                            </svg>
+                        </div>
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+        <!-- footer -->
+        <footer class="footer flexCenter">
+            <div class="foo-logo flexCenter">
+                <img src="https://catflix.su/wp-content/themes/distv/resources/assets/img/catflix.svg" alt="">
+            </div>
+            <div class="foo-list flexCenter">
+                <a href="#">Home</a>
+                <a href="#">Movies</a>
+                <a href="#">Series</a>
+                <a href="#">Search</a>
+            </div>
+            <div class="copyright flexCenter">
+                <span>© Distv+ 2023</span>
+                <a href="#">Home</a>
+                <a href="#">Movies</a>
+                <a href="#">3Series</a>
+                <a href="#">Search</a>
+            </div>
+
+        </footer>
+
+        <div class="tabs row lg-hide md-hide xl-hide">
+            <div class="homeTab flexCenter sm-8 ssm-6">
+                <svg>
+                    <use href="#home" />
+                </svg>
+                Home
+            </div>
+            <div class="movieTab flexCenter sm-8 ssm-6">
+                <svg>
+                    <use href="#movie" />
+                </svg>
+                Movies
+            </div>
+            <div class="seriesTab flexCenter sm-8 ssm-6">
+                <svg>
+                    <use href="#series" />
+                </svg>Series
+            </div>
+            <div class="searchTab flexCenter sm-8 sm-hide ssm-6 ">
+                <svg>
+                    <use href="#search" />
+                </svg>Search
+            </div>
+
+        </div>
+    </div>
+
+</body>
+
+</html>

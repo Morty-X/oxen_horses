@@ -1,0 +1,474 @@
+body>div {
+    display: flex;
+    min-height: 100%;
+    flex-direction: column;
+}
+
+.header {
+    justify-content: space-between;
+    height: 180px;
+    width: 100%;
+    font-size: 20px;
+    padding: 60px 40px;
+}
+
+.head-logo {
+    width: 120px;
+    height: 28px;
+}
+
+.header-menu {
+    display: flex;
+    align-items: center;
+    padding: 4px;
+    background-color: #423c52;
+    border: 2px solid #ccc;
+    border-radius: 9999px;
+    cursor: pointer;
+    transform: translateX(25px);
+}
+
+.header-menu .header-menu__item:nth-child(2) {
+    margin: 0 6px;
+}
+
+.current-menu__item::after {
+    content: "";
+    position: absolute;
+    width: 126px;
+    height: 4px;
+    left: 18px;
+    bottom: 0;
+    background-image: linear-gradient(to right, transparent, rgba(34, 211, 238), transparent);
+    border-radius: 10px;
+}
+
+.header-menu__item {
+    display: flex;
+    align-items: center;
+    border-radius: 9999px;
+    color: #fff;
+    font-weight: 500;
+    justify-content: center;
+    line-height: 30px;
+    padding: 10px 30px;
+    border: 1px solid transparent;
+}
+
+.current-menu__item {
+    background-color: #94a3b81a;
+    border: 1px solid #94a3b84d;
+}
+
+.header-menu__item:hover {
+    background-color: #94a3b81a;
+    border: 1px solid #94a3b84d;
+}
+
+.header-menu__item svg {
+    width: 36px;
+    height: 34px;
+    padding-right: 8px;
+}
+
+.header-r {
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.header-r__search svg {
+    width: 28px;
+    height: 28px;
+}
+
+.header-r__search,
+.header-r__profile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid;
+    border-color: rgba(148, 163, 184, 0.2);
+    border-radius: 9999px;
+    background-color: rgba(27, 33, 44, 0.5);
+    transition: all 0.2s;
+}
+
+.header-r__search:hover,
+.header-r__profile:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+.header-r__search {
+    gap: 15px;
+    padding: 15px 30px 15px 10px;
+    transform: translateX(-20px);
+}
+
+.header-r__profile {
+    width: 60px;
+    height: 60px;
+}
+
+.header-r__profile svg {
+    justify-content: center;
+    width: 45px;
+    height: 45px;
+}
+
+
+/* ============================================ */
+/* 主要内容模块 */
+.main {
+    display: flex;
+    flex-direction: column;
+    padding: 60px 40px;
+}
+
+.main-top {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: -2;
+}
+
+.main-top::after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 640px;
+    border-radius: 0 0 48px 48px;
+    background-color: rgba(15, 18, 35, 0.8);
+    z-index: 0;
+}
+
+.main-top img {
+    width: 100%;
+    height: 640px;
+    border-radius: 0 0 48px 48px;
+    object-fit: cover;
+}
+
+.main-info {
+    height: 420px;
+    color: #fff;
+}
+
+.main-info h1 {
+    line-height: 3.5rem;
+}
+
+.text {
+    display: flex;
+    font-size: 0.9rem;
+    gap: .6rem;
+    color: #CBD5E1;
+}
+
+.tmdb {
+    color: rgba(203, 213, 225);
+}
+
+.text-main {
+    color: rgb(34, 211, 238);
+}
+
+.btns {
+    margin: 1.6rem 0;
+    color: #000;
+}
+
+.btns svg {
+    width: 1.6rem;
+    height: 1.6rem;
+}
+
+.watch {
+    position: relative;
+    padding: 1rem 2rem;
+    background-color: #fff;
+    border-radius: 9999px;
+    cursor: pointer;
+}
+
+.shade {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 9999px;
+    transition: all 0.2s;
+}
+
+.shade:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.watch svg {
+    margin-right: 0.8rem;
+}
+
+.trailer {
+    color: #fff;
+    padding: 1rem 2rem;
+    border: 1px solid #ccc;
+    border-radius: 9999px;
+    margin: 0 1.25rem;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.trailer:hover,
+.plus:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+.plus {
+    color: #fff;
+    padding: 0.9rem;
+    border-radius: 50%;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.tips {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+    color: rgb(203, 213, 225);
+}
+
+/* 影集 */
+.desc {
+    display: flex;
+    align-items: center;
+    margin: 3rem 0 1rem 0;
+}
+
+.descTitle {
+    font-size: 1.5rem;
+    line-height: 2rem;
+}
+
+.next {
+    margin-left: 1rem;
+    width: 1.2rem;
+    height: 1.2rem;
+}
+
+.netWork-menu {
+    position: relative;
+    padding: 20px 0;
+    justify-content: space-between;
+}
+
+.netWork-menu__item {
+    width: 294px;
+    height: 165px;
+    font-size: 0.9rem;
+    color: #64748b;
+    border: 2px solid #cbd5e1;
+    border-radius: 1rem;
+    background-color: #e2e8f0;
+}
+
+.nextR {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    width: 3.5rem;
+    height: 3.5rem;
+    color: #475569;
+    transform: translateX(1.75rem) translateY(-1.75rem);
+    background-color: #cbd5e1;
+    border-radius: 9999px;
+    border: 4px solid #fff;
+    box-shadow: #f8fafc 30px 0px 40px 55px;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+.nextR svg {
+    height: 2rem;
+    width: 2rem;
+}
+
+.nextR:hover {
+    color: #fff;
+    background-color: #000;
+}
+
+.episodes-menu {
+    position: relative;
+    padding: 20px 0;
+    justify-content: space-between;
+}
+
+.episodes-menu__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    width: 294px;
+    height: 152px;
+    padding: 0 0.8rem 1rem;
+    font-size: 0.9rem;
+    font-weight: 700;
+    color: #fff;
+    border-radius: 1rem;
+    cursor: pointer;
+    background-size: cover;
+    transition: all 0.3s;
+}
+
+
+.episodes-menu__item1 {
+    background: url(https://image.tmdb.org/t/p/w342/w2GdNdPF3qhT2tMbeViDkinBc9r.jpg) no-repeat;
+}
+
+.episodes-menu__item2 {
+    background: url(https://image.tmdb.org/t/p/w342/5vjGq9ZPzv1W35MppxIYdpE4ZBu.jpg) no-repeat;
+}
+
+.episodes-menu__item3 {
+    background: url(https://image.tmdb.org/t/p/w342/KtHu2YZ9aWbWq4cX4P0OokZHOm.jpg) no-repeat
+}
+
+.episodes-menu__item4 {
+    background: url(https://image.tmdb.org/t/p/w342/fREh6JYQpmlyp7UG2jXQMvR2ntE.jpg) no-repeat
+}
+
+.last__title span {
+    color: #22d3ee;
+}
+
+.popSeries,
+.popMovies {
+    padding: 0;
+    justify-content: space-between;
+    position: relative;
+}
+
+.popSeries-menu,
+.popMovies-menu {
+    overflow: hidden;
+    height: 23rem;
+    width: 15rem;
+    border-radius: 1rem;
+    cursor: pointer;
+}
+
+.popSeries-menu img {
+    object-fit: contain;
+}
+
+/* footer模块 */
+.footer {
+    flex-direction: column;
+    gap: 1.5rem;
+    height: 20rem;
+}
+
+.foo-logo img {
+    width: 120px;
+    height: 28px;
+}
+
+.foo-list {
+    gap: 1.5rem;
+}
+
+.copyright {
+    gap: 1rem;
+}
+
+.copyright a,
+.copyright span {
+    font-weight: 500;
+    color: #64748b;
+}
+
+.foo-list a:hover,
+.copyright a:hover {
+    text-decoration: underline;
+}
+
+/*底部tab栏 */
+.tabs {
+    position: fixed;
+    bottom: 0;
+    height: 3rem;
+    width: 100%;
+    background-color: #d8d9d9;
+    cursor: pointer;
+    z-index: 9;
+}
+
+.homeTab,
+.movieTab,
+.seriesTab,
+.searchTab {
+    flex-direction: column;
+}
+
+.tabs svg {
+    width: 1.25rem;
+    height: 1.25rem;
+}
+
+/* 响应式布局适配方案 */
+/* xxs */
+@media screen and (max-width: 598px) {
+    .main-info h1 {
+        font-size: 1.5rem;
+    }
+
+    .text {
+        font-size: 0.8rem;
+    }
+
+    .watch {
+        padding: 1rem 0.6rem;
+        font-size: 0.8rem;
+    }
+
+    .btns svg {
+        width: 1rem;
+        height: 1rem;
+    }
+
+    .trailer {
+        padding: 1rem 0.8rem;
+    }
+
+    .tips {
+        font-size: 0.8rem;
+    }
+}
+
+@media screen and (min-width: 598px) and (max-width:768px) {
+
+    .episodes-menu__item,
+    .netWork-menu__item {
+        width: 248px;
+    }
+}
+
+@media screen and (min-width: 598px) and (max-width: 698px) {
+    .popSeries-menu {
+        height: 18rem;
+        width: 12rem;
+    }
+
+    .popMovies-menu {
+        height: 18rem;
+        width: 12rem;
+    }
+}
