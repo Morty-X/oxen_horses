@@ -116,6 +116,8 @@ header {
   justify-content: center;
   border-radius: 20px;
   transition: all 0.3s;
+  text-decoration: none;
+  color: black;
 }
 .header_middle_item:hover {
   background-color: #fff;
@@ -135,6 +137,8 @@ header {
   justify-content: space-around;
 }
 .header_right_search {
+  text-decoration: none;
+  color: #111;
   width: 125px;
   height: 48px;
   border: 1px solid #ccc;
