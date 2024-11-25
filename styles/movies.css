@@ -36,7 +36,10 @@
     justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
+    padding: 0;
 }
+
+
 
 .top .top-2 ul li {
     height: 48px;
