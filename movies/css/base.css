@@ -1,0 +1,108 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ul li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+input {
+    border: none;
+    outline: none;
+    border: 1px solid #000;
+}
+
+.clearfix::after {
+    content: '';
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+@media screen and (max-width: 1280px) and (min-width: 1024px) {
+    body .top {
+      width: 1024px;
+    }
+  }
+  @media screen and (max-width: 1024px) and (min-width: 770px) {
+    body .top {
+      width: 768px;
+    }
+    body .top .top-2 {
+      display: none;
+    }
+    body .top .top-3 .search {
+      display: none;
+    }
+    body footer {
+      display: none;
+    }
+    body .fixation {
+      display: block;
+    }
+  }
+  @media screen and (max-width: 770px) and (min-width: 640px) {
+    body .top {
+      width: 640px;
+    }
+    body .top .top-2 {
+      display: none;
+    }
+    body .top .top-3 .search {
+      display: none;
+    }
+    body footer {
+      display: none;
+    }
+    body .fixation {
+      display: block;
+    }
+  }
+  @media screen and (max-width: 768px) {
+    body .middle {
+      width: 100%;
+    }
+    body .middle .middle-nav {
+      width: 100%;
+    }
+    body .middle .middle-content {
+      width: 100%;
+    }
+    body .middle .middle-buttom {
+      width: 100%;
+    }
+    body article .article_subject .article_subject_img {
+      width: 100%;
+    }
+  }
+  @media screen and (max-width: 640px) {
+    body .top {
+      width: 640px;
+    }
+    body .top .top-2 {
+      display: none;
+    }
+    body .top .top-3 .search {
+      display: none;
+    }
+    body footer {
+      display: none;
+    }
+    body .fixation {
+      display: block;
+    }
+  }
+  @media screen and (max-width: 600px) {
+    body .fixation_div_item:last-child {
+      /* 设置display: block;会把display: flex;覆盖掉
+          所以只能用display: flex;覆盖display: none;
+      */
+      display: flex;
+    }
+  }
