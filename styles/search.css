@@ -1,0 +1,319 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* 头部 */
+.top {
+    width: 1157px;
+    height: 144px;
+    margin: 0 auto;
+    display: flex;
+    justify-content:space-between;
+}
+
+.top-l img {
+   width: 260px;
+    height: 28px;
+    margin-top: 55px;
+	position: relative;
+	left: -65px;
+}
+
+.top-banner {
+   width: 401px;
+    height: 58px;
+    background-color: #64784b1a;
+    border: 1px solid #ccc;
+    border-radius: 24px;
+    margin: 40px auto;
+   display: flex;
+    justify-content: space-around;
+}
+
+@media screen and (max-width:1012px){
+	.top-banner,
+	.top-r input,
+	.top-r .ss {
+		display: none;
+	}
+}
+
+@media screen and (max-width:1012px) {
+	.top {
+		width: 700px;
+	}
+	.user {
+		position: relative;
+		right: -160px;
+	}
+}
+
+.top-banner .home,
+.top-banner .movies,
+.top-banner .series {
+    width: 120px;
+    height: 55px;
+	font-size: 15px;
+	text-align: center;
+	line-height: 55px;
+	margin: 3px auto 0;
+	box-sizing: border-box;
+}
+
+.top-banner .home:hover,
+.top-banner .movies:hover,
+.top-banner .series:hover{
+	height: 50px;
+    border: 1px solid #ccc;
+    border-radius: 24px;
+	background-color: #fff;
+}
+
+
+.top-banner .home img,
+.top-banner .movies img{
+    width: 20px;
+    height: 20px;
+	position: relative;
+	top: 3px;
+} 
+
+.top-banner .series img {
+	width: 20px;
+	height: 25px;
+	position: relative;
+	top: 6px;
+}
+
+.top a {
+	color: #000;
+}
+
+.top .top-r {
+	width: 100px;
+	height: 48px;
+	margin: 38px auto;
+	position: relative;
+	display: flex;
+	justify-content: space-between;
+}
+
+.top-r img{
+	width: 20px;
+	height: 20px;
+	position: absolute;
+	top: 24px;
+	left: 10px;
+	color: white;
+}
+
+.top-r input {
+	width: 120px;
+	 height: 48px;
+	 font-size: 18px;
+	 padding-left: 15px;
+	 box-sizing: border-box;
+	 border-radius: 24px;
+	 border: 1px solid #ccc;
+	 margin-top: 10px;
+	 background-color: #fff;
+}
+
+.top-r input:hover{
+	background-color: black;
+	color: #fff;
+}
+
+.top-r .user:hover{
+	background-color:black;
+}
+
+.top-r .user:hover img {
+	filter: invert(100%);
+}
+
+.top-r .user {
+	width: 50px;
+	height: 50px;
+	border: 1px solid #ccc;
+	border-radius: 50px;
+	box-sizing: border-box;
+	background-color: #64784b1a;
+	color: #000;
+	margin: 8px 0 0 20px;
+}
+
+.top-r .user img { 
+	position: relative;
+	top: 15px;
+	left: 14px;
+}
+
+/* 搜索区 */
+.banner {
+    width: 1157px;
+    height: 550px;
+   /* background-color: palevioletred; */
+    margin: 0 auto 20px;
+    position: relative;
+	overflow: hidden;
+}
+
+@media screen and (max-width:1013px){
+	.banner {
+		width: 700px;
+	}
+	.banner .search-ku{
+		width: 695px;
+	}
+}
+
+.banner .banner-txt {
+	width: 32px;
+    font-size: 25px;
+    font-weight: 700px;
+    position: absolute;
+    left: 0;
+}
+
+.banner .banner-search {
+	margin-top: 50px;
+}
+
+.banner .search-ku {
+    /* width: 1154px; */
+    height: 48px;
+    border: 1px solid #ccc;
+    border-radius: 24px;
+    margin: 0 auto;
+}
+
+.banner-search input {
+    width: 500px;
+    height: 40px;
+	padding-left: 10px;
+	font-size: 20px;
+	overflow: hidden;
+	border: none;
+	outline: none;
+	position: absolute;
+	top: 55px;
+	left: 35px;
+}
+
+.banner-search img {
+	position: relative;
+	left: 15px;
+	top: 15px;
+	width: 20px;
+}
+
+/* 底部 */
+.box-one {
+	width: 1157px;
+	height: 150px;
+	margin: 0 auto;
+}
+
+.box-one img {
+width: 120px;
+   margin: 0 auto 20px;
+   display: block;
+   }
+
+.box-one .box-a {
+    display: flex;
+    justify-content: space-between;
+    width: 300px;
+    height: 20px;
+    margin: 0 auto;
+}
+
+.box-a div a {
+    display: block;
+    height: 20px;
+    color: #000;
+}
+
+.box-one .box-b {
+    display: flex;
+    justify-content: space-between;
+    width: 400px;
+    height: 30px;
+    margin: 15px auto;
+}
+
+
+.box-b a {
+    display: block;
+    height: 30px;
+    color: #8d8b8b;
+}
+
+@media screen and (max-width: 1012px) {
+	.box-one {
+		display: none;
+	}
+}
+
+/* 大屏下的隐藏布局 */
+.bottem {
+	display: none;
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	height: 64px;
+	background-color: #f0f3f6;
+}
+
+.bottem-tu {
+	width: 100%;
+	display: flex;
+}
+
+.bottem .tu {
+	flex: 1;
+	height: 64px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.bottem .tu img {
+	width: 22px;
+	height: 22px;
+}
+
+.bottem .tu div{
+	font-size: 16px;
+}
+
+.bottem-tu .tu:Nth-child(1){
+	display: none;
+}
+
+.bottem-tu .tu:Nth-child(2){
+	display: none;
+}
+
+.bottem-tu .tu:Nth-child(3){
+	display: none;
+}
+
+@media screen and (max-width: 1032px) {
+	.bottem,
+	.bottem .tu:Nth-child(1),
+	.bottem .tu:Nth-child(2),
+	.bottem .tu:Nth-child(3) {
+	  /* 设置display: block;会把display: flex;覆盖掉
+		  所以只能用display: flex;覆盖display: none;
+	  */
+	  display: flex;
+	}
+  }
