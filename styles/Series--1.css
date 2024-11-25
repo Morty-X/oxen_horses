@@ -1,0 +1,374 @@
+.top {
+    width: 1280px;
+    height: 144px;
+    padding-top: 20px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.top .top_l {
+    width: 132px;
+    height: 60px;
+    margin-top: 10px;
+}
+
+.top .top_c {
+    width: 400px;
+    height: 60px;
+}
+
+.top .top_c ul {
+    width: 398px;
+    height: 57px;
+    display:flex;
+    border-radius: 50px;
+    background-color: #64748b1a;
+    border: 1px solid #64748b33;
+    gap: 10px;
+}
+
+.top .top_c ul li {
+    border-radius: 50px;
+    width: 125px;
+    height: 48px;
+    line-height: 60px;
+    margin: auto;
+    transition: all 0.5s;
+    color: black;
+}
+
+.top .top_c ul li a {
+    width: 125px;
+    height: 48px;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.top .top_c .Series {
+    background-color: #ffffff;
+    border-radius: 60px;
+}
+
+.top .top_c ul li:hover {
+    background-color: #ffffff;
+    border-radius: 60px;
+}
+
+.top .top_c ul li img {
+    width: 30px;
+    height: 30px;
+}
+
+.top .top_r {
+    width: 190px;
+    height: 80px;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+.top .top_r .search a {
+    width: 125px;
+    height: 48px;
+    border: 0.666667px solid #64748b33;
+    border-radius: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    color: black;
+    transition: all 0.5s;
+}
+
+.top .top_r .search a:hover {
+    background-color: black;
+    color: white;
+}
+
+.top .top_r .user {
+    width: 48px;
+    height: 48px;
+    border: 1px solid #64748b33;
+    border-radius: 60px;
+    background-color: #64748b1a;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+.top .top_r .user:hover {
+    background-color: black;
+    color: white;
+}
+
+.banner {
+    height: 1578px;
+}
+
+.banner h2 {
+    padding-left: 30px;
+    padding-bottom: 20px;
+}
+
+.banner .stor {
+    width: 1232px;
+    height: 53px;
+    margin: auto;
+}
+
+.banner .stor ul {
+    height: 36px;
+    padding: 8px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    line-height: 36px;
+    justify-content: space-between;
+    font-size: 15px;
+}
+
+.banner .stor .right a {
+    display: block;
+    border-radius: 50px;
+    font-size: 20px;
+    background-color: #ffffff;
+    border: 0;
+    color: black;
+}
+
+.banner .stor .right a:hover {
+    background-color: #e2e8f0;
+    color: black;
+    transform: scale(1.1);
+
+}
+
+.banner .stor ul li a {
+    border-radius: 50px;
+    background-color: #64748b1a;
+    border: 1px solid #64748b33;
+    padding: 8px 16px;
+    color: black;
+    transition: all 0.5s;
+}
+
+.banner .stor .Feat {
+    background-color: black;
+    color: white;
+    border-radius: 9999px;
+    width: 100px;
+    height: 36px;
+    cursor: pointer;
+}
+
+.banner .stor ul li a:hover {
+    background-color: black;
+    color: white;
+}
+
+.banner .Series_b {
+    width: 1216px;
+    height: 1324px;
+    margin: auto;
+    padding-bottom: 30px;
+}
+
+.banner .Series_b ul {
+    width: 1216px;
+    height: 1324px;
+    display: flex;
+    align-content: space-between;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.banner .Series_b ul li {
+    width: 280px;
+    height: 420px;
+    position: relative;
+    transition: all 0.2s;
+}
+
+.banner .Series_b ul li a {
+    display: block;
+    width: 280px;
+    height: 420px;
+}
+
+.banner .Series_b ul li img {
+    width: 280px;
+    height: 420px;
+    transition: all 0.5s;
+    border: 1px solid white;
+    border-radius: 20px;
+}
+
+.banner .Series_b .box {
+    width: 280px;
+    height: 130px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0%;
+    transition: all 0.2s;
+}
+
+.banner .Series_b .box img {
+    width: 280px;
+    height: 420px;
+    transition: all 0.5s;
+    border: 1px solid white;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.banner .Series_b .box:hover {
+    opacity: 1;
+}
+
+.banner .Series_b .box img {
+    width: 280px;
+    height: 130px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.banner .Series_b .pox {
+    width: 280px;
+    height: 290px;
+    position: absolute;
+    background-color: black;
+    top: 130px;
+    left: 0;
+    color: white;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.banner .Series_b .pox h3 {
+    width: 240px;
+    padding-top: 5px;
+}
+
+.banner .Series_b .pox .box_t {
+    width: 240px;
+    padding-top: 5px;
+    font-size: 13px;
+}
+
+.banner .Series_b .pox .box_t span {
+    color: aqua;
+}
+
+.banner .Series_b .pox .box_c {
+    width: 240px;
+    height: 30px;
+    margin-top: 20px;
+}
+
+.banner .Series_b .pox .box_c span {
+    border: 1px solid black;
+    border-radius: 9999px;
+}
+
+.banner .Series_b .pox .Watch_l {
+    margin-right: 10px;
+    padding: 10px 18px;
+    background-color: white;
+    color: black;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+.banner .Series_b .pox .Watch_l:hover {
+    background-color: grey;
+}
+
+.banner .Series_b .pox .Watch_r {
+    padding: 8px 15px;
+    font-size: 20px;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+.banner .Series_b .pox .Watch_r:hover {
+    background-color: white;
+    color: black;
+}
+
+.banner .Series_b .pox .box_b {
+    margin: 20px;
+}
+
+.banner .Series_b ul li:hover {
+    transform: scale(1.1);
+}
+
+.banner .Load {
+    width: 129px;
+    height: 48px;
+    margin: auto;
+}
+
+.banner .Load a {
+    width: 129px;
+    height: 48px;
+    border: 0.666667px solid #64748b33;
+    padding: 8px 20px;
+    border-radius: 9999px;
+    text-align: center;
+    line-height: 48px;
+    background-color: #64748b1a;
+    transition: all 0.5s;
+    color: black;
+}
+
+.banner .Load a:hover {
+    background-color: black;
+    color: white;
+}
+
+.bot {
+    width: 500px;
+    height: 300px;
+    padding-top: 100px;
+    margin: auto;
+}
+
+.bot .bot_t img {
+    width: 200px;
+    height: 50px;
+    margin-left: 150px;
+}
+
+.bot .bot_c {
+    width: 250px;
+    margin: auto;
+}
+
+.bot .bot_c ul {
+    justify-content: space-between;
+    display:flex;
+    text-align: center;
+}
+
+.bot .bot_b {
+    width: 350px;
+    margin: auto;
+}
+
+.bot .bot_b ul {
+    justify-content: space-between;
+    display:flex;
+    text-align: center;
+}
